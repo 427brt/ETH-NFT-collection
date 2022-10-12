@@ -16,7 +16,7 @@ import {Base64} from "./libraries/Base64.sol";
 // インポートした OpenZeppelin のコントラクトを継承しています。
 // 継承したコントラクトのメソッドにアクセスできるようになります。
 contract MyEpicNFT is ERC721URIStorage {
-    // OpenZeppelin　が　tokenIds　を簡単に追跡するために提供するライブラリを呼び出しています
+    // OpenZeppelinがtokenIdsを簡単に追跡するために提供するライブラリを呼び出しています
     using Counters for Counters.Counter;
     // _tokenIdsを初期化（_tokenIds = 0）
     Counters.Counter private _tokenIds;
@@ -73,9 +73,10 @@ contract MyEpicNFT is ERC721URIStorage {
         "tune",
         "apple"
     ];
+    event NewEpicNFTMinted(address sender, uint256 tokenId);
 
     // NFT トークンの名前とそのシンボルを渡します。
-    constructor() ERC721("SquareNFT", "SQUARE") {
+    constructor() ERC721("uuuNFT", "YSK") {
         console.log("This is my NFT contract.");
     }
 
@@ -198,5 +199,7 @@ contract MyEpicNFT is ERC721URIStorage {
 
         // 次の NFT が Mint されるときのカウンターをインクリメントする。
         _tokenIds.increment();
+
+        emit NewEpicNFTMinted(msg.sender, newItemId);
     }
 }
