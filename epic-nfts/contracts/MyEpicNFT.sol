@@ -29,54 +29,54 @@ contract MyEpicNFT is ERC721URIStorage {
 
     // 3つの配列 string[] に、それぞれランダムな単語を設定しましょう。
     string[] firstWords = [
-        "speech",
-        "accumulation",
-        "reader",
-        "judicial",
-        "destruction",
-        "instinct",
-        "diameter",
-        "pride",
-        "charter",
-        "wound",
-        "sing",
-        "tropical",
-        "gesture"
+        "Adventure ",
+        "Always ",
+        "Be ",
+        "Change ",
+        "Deeds ",
+        "Do ",
+        "Focus ",
+        "Genius ",
+        "Glory ",
+        "Good ",
+        "Happy ",
+        "Keep ",
+        "Life "
     ];
     string[] secondWords = [
-        "beam",
-        "spend",
-        "animal",
-        "fashion",
-        "kanye",
-        "justin",
-        "gigi",
-        "bella",
-        "kylie",
-        "hailey",
-        "mike",
-        "drake",
-        "puth"
+        "for ",
+        "your ",
+        "is ",
+        "makes ",
+        "from ",
+        "to ",
+        "and ",
+        "a ",
+        "loves ",
+        "never ",
+        "the ",
+        "before ",
+        "will "
     ];
     string[] thirdWords = [
-        "michael",
-        "bb",
-        "choco",
-        "direction",
+        "mine",
+        "now",
+        "yourself",
+        "best",
         "simp",
         "queen",
         "bond",
-        "king",
-        "xone",
-        "Twitch",
+        "dreams",
+        "try",
+        "world",
         "impact",
-        "tune",
-        "apple"
+        "heart",
+        "forever"
     ];
     event NewEpicNFTMinted(address sender, uint256 tokenId);
 
     // NFT トークンの名前とそのシンボルを渡します。
-    constructor() ERC721("uuuNFT", "YSK") {
+    constructor() ERC721("wordsNFT", "WRF") {
         console.log("This is my NFT contract.");
     }
 
